@@ -86,22 +86,21 @@ const ValentineProposal = () => {
               transition: { delay: 0.5, duration: 0.4 }
             }}
           >
-            <h2>My Dearest Love, 💌</h2>
+            <h2>My Dear Abhii, 💌</h2>
             <motion.p
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              From the moment I met you, my world became brighter, my heart fuller, and my life happier. 🌟
-              Your smile lights up my day, and your love completes me in ways I never imagined possible.
+              I'm not so good with words, but I would like to thank you for being so patient with me.🌟
+              You're my cute, angry bird with such broken humor. I mean, c'mon, at times it even surprises me, but yeah, love that as well.
             </motion.p>
             <motion.p
               initial={{ x: 50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.0 }}
             >
-              You're my everything - my best friend, my partner, and my greatest adventure. 🌈
-              Every moment with you is precious, and I cherish the love we share more than words can express.
+              Thank you for being constant to someone like me. Thank you for being my valentine and yeahh I LOVEE YOUU.
             </motion.p>
             <motion.p
               initial={{ scale: 0.8, opacity: 0 }}
@@ -109,7 +108,7 @@ const ValentineProposal = () => {
               transition={{ delay: 1.5 }}
               className="mt-4"
             >
-              <strong>Yours now and always, 💑<br/>Your Loving Valentine 💘</strong>
+              <strong>Yours now and always, <br/>Your Shouvik 💘</strong>
             </motion.p>
           </motion.div>
         </motion.div>
