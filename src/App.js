@@ -5,13 +5,6 @@ import "./styles.css";
 
 const ValentineProposal = () => {
   const [showLetter, setShowLetter] = useState(false);
-  const [noBtnPosition, setNoBtnPosition] = useState({ left: "55%", top: "50%" });
-
-  const moveNoButton = () => {
-    const x = Math.random() * (window.innerWidth - 100);
-    const y = Math.random() * (window.innerHeight - 100);
-    setNoBtnPosition({ left: `${x}px`, top: `${y}px` });
-  };
 
   return (
     <div className="valentine-container">
@@ -63,19 +56,6 @@ const ValentineProposal = () => {
           >
             Yes, Forever! 😍
           </motion.button>
-          <motion.button
-            className="btn btn-secondary"
-            style={{ 
-              position: "absolute",
-              transform: 'translate(-50%, -50%)',
-              ...noBtnPosition 
-            }}
-            onMouseOver={moveNoButton}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Maybe Later 😢
-          </motion.button>
         </div>
       </div>
       
@@ -106,23 +86,22 @@ const ValentineProposal = () => {
               transition: { delay: 0.5, duration: 0.4 }
             }}
           >
-            <h2>Dear Abhii, 💌</h2>
+            <h2>My Dearest Love, 💌</h2>
             <motion.p
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              I'm not so good with words, but I would like to thank you for being so patient with me.
-
-You're my cute, angry bird with such broken humor. I mean, c'mon, at times it even surprises me, but yeah, love that as well.
+              From the moment I met you, my world became brighter, my heart fuller, and my life happier. 🌟
+              Your smile lights up my day, and your love completes me in ways I never imagined possible.
             </motion.p>
             <motion.p
               initial={{ x: 50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.0 }}
             >
-              Thank you for being constant to someone like me. Thank you for being my valentine and yeahh I LOVEE YOUU.
-               
+              You're my everything - my best friend, my partner, and my greatest adventure. 🌈
+              Every moment with you is precious, and I cherish the love we share more than words can express.
             </motion.p>
             <motion.p
               initial={{ scale: 0.8, opacity: 0 }}
@@ -130,7 +109,7 @@ You're my cute, angry bird with such broken humor. I mean, c'mon, at times it ev
               transition={{ delay: 1.5 }}
               className="mt-4"
             >
-              <strong>Yours now and always, <br/>Your Shouvik 💘</strong>
+              <strong>Yours now and always, 💑<br/>Your Loving Valentine 💘</strong>
             </motion.p>
           </motion.div>
         </motion.div>

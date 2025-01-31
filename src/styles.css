@@ -85,13 +85,6 @@
     box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4) !important;
   }
   
-  .btn-secondary {
-    transition: all 0.3s ease !important;
-    padding: 15px 30px !important;
-    font-size: 1.2em !important;
-    z-index: 3;
-  }
-  
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
