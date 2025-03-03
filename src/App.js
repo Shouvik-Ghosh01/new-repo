@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-const ValentineProposal = () => {
+const ThankYouShradhha = () => {
   const [showLetter, setShowLetter] = useState(false);
 
   return (
-    <div className="valentine-container">
-      {/* Floating Hearts & Roses */}
-      <div className="floating-hearts">
-        {[...Array(15)].map((_, i) => (
+    <div className="thankyou-container">
+      {/* Floating Happy Cat Animation */}
+      <div className="floating-cat">
+        {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
-            className="heart"
+            className="cat"
             initial={{ opacity: 0 }}
             animate={{
               y: [-100, window.innerHeight + 100],
               x: [0, Math.random() * 100 - 50],
               opacity: [1, 0],
-              rotate: [0, Math.random() * 360],
+              rotate: [0, Math.random() * 20 - 10],
               scale: [0.8, 1.2]
             }}
             transition={{
@@ -30,36 +30,36 @@ const ValentineProposal = () => {
             }}
             style={{
               left: `${Math.random() * 100}%`,
-              fontSize: `${20 + Math.random() * 30}px`
+              fontSize: `${40 + Math.random() * 20}px`
             }}
           >
-            {Math.random() > 0.5 ? '❤️' : '🌹'}
+            🐱
           </motion.div>
         ))}
       </div>
       
-      <div className="proposal-box text-center p-4">
+      <div className="message-box text-center p-4">
         <motion.h1 
-          className="text-danger mb-4"
+          className="text-dark mb-4"
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           transition={{ type: 'spring', stiffness: 200 }}
         >
-          Will you be my Valentine? 💖
+          Thank you, Shradhha, for being cute, funny, and sexy! 😻
         </motion.h1>
         <div className="d-flex justify-content-center gap-3 mt-3">
           <motion.button
-            className="btn btn-danger pulse"
+            className="btn btn-dark pulse"
             onClick={() => setShowLetter(true)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            Yes, Forever! 😍
+            Read My Letter 💌
           </motion.button>
         </div>
       </div>
       
-      {/* Love Letter with Opening Animation */}
+      {/* Love Letter Animation */}
       {showLetter && (
         <motion.div
           className="love-letter p-4 mt-4 text-center"
@@ -86,21 +86,21 @@ const ValentineProposal = () => {
               transition: { delay: 0.5, duration: 0.4 }
             }}
           >
-            <h2>My Dear Abhii, 💌</h2>
+            <h2>Dear Shradhha, 💌</h2>
             <motion.p
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              I'm not so good with words, but I would like to thank you for being so patient with me.🌟
-              You're my cute, angry bird with such broken humor. I mean, c'mon, at times it even surprises me, but yeah, love that as well.
+              Since the moment I met you, you've been the highlight of my days. 🌟
+              You're my adorable, mischievous, and incredibly charming black cat in human form. 😻
             </motion.p>
             <motion.p
               initial={{ x: 50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.0 }}
             >
-              Thank you for being constant to someone like me. Thank you for being my valentine and yeahh I LOVEE YOUU.
+              Thank you for being the most amazing person I could have asked for. You're the best date I've had since coming here, and I can't wait for more moments with you. 💕
             </motion.p>
             <motion.p
               initial={{ scale: 0.8, opacity: 0 }}
@@ -108,7 +108,7 @@ const ValentineProposal = () => {
               transition={{ delay: 1.5 }}
               className="mt-4"
             >
-              <strong>Yours now and always, <br/>Your Shouvik 💘</strong>
+              <strong>Yours, now and always,<br/>Your Favorite Date 💖</strong>
             </motion.p>
           </motion.div>
         </motion.div>
@@ -117,4 +117,4 @@ const ValentineProposal = () => {
   );
 };
 
-export default ValentineProposal;
+export default ThankYouShradhha;
